@@ -1,0 +1,61 @@
+@font-face {
+    font-family: "Oswald Regular";
+    src: url(./../fonts/Oswald-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Oswald Light";
+    src: url(./../fonts/Oswald-Light.ttf);
+}
+
+@font-face {
+    font-family: "Oswald Bold";
+    src: url(./../fonts/Oswald-SemiBold.ttf);
+}
+
+:root {
+    font-family: "Oswald Light";
+}
+
+#root.nostyle {
+    --text-body: black;
+    --shadow-color: black;
+}
+
+#root.dark {
+    --primary-color: white;
+    --background-normal: #11001c;
+    --background-gradient: linear-gradient(to left bottom, #11001c, #3a015c) 50%;
+    --text-dark: #3a015c;
+    --text-light: white;
+    --text-body: white;
+    --shadow-color: black;
+}
+
+#root.light {
+    --primary-color: white;
+    --background-normal: #f2f0f1;
+    --background-gradient: linear-gradient(to left bottom, #9d8058, #9d8058) 50%;
+    --text-dark: #9d8058;
+    --text-light: white;
+    --text-body: var(--text-dark);
+    --shadow-color: var(--text-dark);
+}
+    
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.app {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+@media (max-width: 720px){
+    .app {
+        display: block;
+    }
+}

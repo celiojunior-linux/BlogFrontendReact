@@ -1,0 +1,138 @@
+.menu {
+    background: var(--background-gradient);
+    min-width: 180px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-between;
+    padding: 0px;
+    font-family: "Oswald Bold";
+    color: var(--text-light);
+    overflow: auto;
+}
+
+.navBar {
+    flex-grow: 1;
+    overflow: auto;
+    min-height: 200px;
+}
+
+.linkItem {
+    list-style: none;
+}
+
+.linkItem a {
+    color: var(--text-light);
+    display: block;
+    border: 1px solid transparent;
+    text-align: left;
+    padding: 10px;
+    transition-duration: 200ms;
+    text-decoration: none;
+    text-align: center;
+}
+
+.linkItem > a.selected{
+    border-color: var(--text-light);
+    background-color: var(--background-normal);
+    transition-duration: 200ms;
+    color: var(--text-body);
+}
+
+
+.linkItem a:hover,
+.selected {
+    color: var(--text-body);
+    font-weight: 1px;
+    background-color: var(--background-normal);
+}
+
+.legend {
+    text-align: center;
+    padding: 10px 10px;
+}
+
+.logoContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 120px;
+}
+
+.logoContainer .title {
+    text-align: center;
+}
+
+.logoContainer .logo {
+    font-size: 64px;
+}
+
+.styleButton {
+    width: 100%;
+    border-radius: 0px;
+    font-weight: bolder;
+    border-style: outset;
+    border-width: 1px;
+    background-color: var(--);
+    color: var(--text-light);
+    background-color: var(--background-gradient);
+    height: 32px;
+}
+
+.styleButton:hover {
+    background-color: var(--background-normal);
+    color: var(--text-body);
+    cursor: pointer;
+    border-color: var(--text-body);
+}
+
+.mobilePanel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.menuButton {
+    display: none !important;
+    width: 48px;
+    height: 48px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-width: 1px;
+}
+
+.hide{
+    display: none !important;
+    height: 0%;
+}
+
+
+@media (max-width: 720px) {
+    .logoContainer{
+        padding: 10px;
+        flex-direction: row;
+        justify-content: space-between;
+        margin:0px;
+        top: 0px;
+        border-bottom: 1px solid var(--text-body);
+
+    }
+
+    .menu{
+        height: max-content;
+        overflow: auto;
+    }
+
+
+    .navBar {
+        height: 100px;
+    }
+
+    .menuButton {
+        display: block !important;        
+    }
+}

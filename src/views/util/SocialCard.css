@@ -1,0 +1,24 @@
+.socialCard {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.socialCard .socialItem {
+    display: flex;
+    margin: 20px;
+    border-radius: 10px;
+    border: 1px solid var(--text-body);
+    color: var(--text-body);
+    padding: 4px;
+    align-items: center;
+}
+
+.socialCard .socialItem:hover{
+    background: var(--background-gradient);
+    color: var(--text-light) !important;
+}
+
+.socialIcon{
+    font-size: 72px;
+}
