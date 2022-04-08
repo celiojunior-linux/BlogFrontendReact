@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/BlogFrontendReact/static/css/main.88cb39ed.css",
+    "main.js": "/BlogFrontendReact/static/js/main.8a26baca.js",
+    "static/media/Oswald-SemiBold.ttf": "/BlogFrontendReact/static/media/Oswald-SemiBold.441c26f52d30f150846a.ttf",
+    "static/media/Oswald-Light.ttf": "/BlogFrontendReact/static/media/Oswald-Light.890b1795d7ad98c6b59b.ttf",
+    "static/media/Oswald-Regular.ttf": "/BlogFrontendReact/static/media/Oswald-Regular.72bf4cde68ddbc03f143.ttf",
+    "index.html": "/BlogFrontendReact/index.html",
+    "main.88cb39ed.css.map": "/BlogFrontendReact/static/css/main.88cb39ed.css.map",
+    "main.8a26baca.js.map": "/BlogFrontendReact/static/js/main.8a26baca.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.88cb39ed.css",
+    "static/js/main.8a26baca.js"
+  ]
+}
